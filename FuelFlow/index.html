@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FuelFlow — Track your fuel expenses, mileage & receipts</title>
+<meta name="description" content="FuelFlow is an Android fuel tracker: AI receipt scanning, multi-vehicle fuel logging, km/L & MPG charts, cost per km, CSV export and Google Drive backup. No ads, ever.">
+
+<!-- Replace YOURNAME with your GitHub username before publishing (see README.md) -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="FuelFlow — Track your fuel expenses, mileage & receipts">
+<meta property="og:description" content="AI receipt scanning, multi-vehicle fuel logs, km/L & MPG charts, CSV export and Drive backup. No ads, ever.">
+<meta property="og:url" content="https://YOURNAME.github.io/fuelflow-site/">
+<meta property="og:image" content="https://YOURNAME.github.io/fuelflow-site/assets/shots/s9.webp">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#F7F4EF">
+<link rel="icon" href="assets/icon.webp">
+<link rel="canonical" href="https://YOURNAME.github.io/fuelflow-site/">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="assets/shots/s1.webp">
+<link rel="stylesheet" href="styles.css">
+<noscript><style>.reveal { opacity: 1; transform: none }</style></noscript>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "FuelFlow: Fuel Receipt Log",
+  "operatingSystem": "Android",
+  "applicationCategory": "AutoAndVehicles",
+  "description": "Track fuel expenses, mileage & KmL/MPG, scan receipts, and monitor vehicle costs",
+  "url": "https://play.google.com/store/apps/details?id=com.nksoft.fuelflow",
+  "image": "https://play-lh.googleusercontent.com/Lh27J_Tykz7oI8fudy0LjOvQldRnvqHesn0lHD49KUApRpVBTgG5s0pvQy1Ef7Ien5pFCMTx9o7rkfjOc1wpqQ",
+  "author": { "@type": "Person", "name": "nksoft26" },
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "AUD" },
+  "contentRating": "Rated for 3+"
+}
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<!-- ============ HEADER ============ -->
+<header class="site-header" id="siteHeader">
+  <div class="container header-inner">
+    <a class="brand" href="#top" aria-label="FuelFlow home">
+      <img src="assets/icon.webp" alt="" width="34" height="34" class="brand-logo">
+      <span class="brand-name">FuelFlow</span>
+      <span class="brand-sub">fuel receipt log</span>
+    </a>
+    <nav class="nav" aria-label="Page sections">
+      <a href="#features">Features</a>
+      <a href="#how">How it works</a>
+      <a href="#screens">Screenshots</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <a class="play-badge" href="https://play.google.com/store/apps/details?id=com.nksoft.fuelflow" rel="noopener">
+      <img src="assets/badge/en_badge_web_generic.png" alt="Get it on Google Play" width="255" height="100">
+    </a>
+    <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="mobileNav">
+      <span aria-hidden="true"></span><span aria-hidden="true"></span>
+      <span class="sr-only">Menu</span>
+    </button>
+  </div>
+  <nav class="mobile-nav" id="mobileNav" aria-label="Page sections (mobile)">
+    <a href="#features">Features</a>
+    <a href="#how">How it works</a>
+    <a href="#screens">Screenshots</a>
+    <a href="#pricing">Pricing</a>
+    <a href="#faq">FAQ</a>
+    <a class="mobile-cta" href="https://play.google.com/store/apps/details?id=com.nksoft.fuelflow" rel="noopener">Get it on Google Play</a>
+  </nav>
+</header>
+
+<main id="main">
+<section class="hero" id="top">
+  <div class="hero-bg" aria-hidden="true">
+    <span class="glow glow-a"></span>
+    <span class="glow glow-b"></span>
+    <svg class="droplet-mark" viewBox="0 0 100 120" aria-hidden="true"><path d="M50 4C28 34 12 55 12 78a38 38 0 0 0 76 0c0-23-16-44-38-74Z"/></svg>
+  </div>
+
+  <div class="container hero-inner">
+    <div class="hero-copy reveal">
+      <p class="eyebrow">Android &middot; Free + in-app purchase &middot; No ads, ever</p>
+      <h1>Know what your fuel<br><span class="accent">actually costs.</span></h1>
+      <p class="lede">FuelFlow logs every fill-up, reads your receipt with AI, and turns it into charts:
+        cost per&nbsp;km, km/L or MPG, price trends and monthly spend — for every vehicle you own.</p>
+
+      <div class="cta-row">
+        <a class="play-badge" href="https://play.google.com/store/apps/details?id=com.nksoft.fuelflow" rel="noopener">
+          <img src="assets/badge/en_badge_web_generic.png" alt="Get it on Google Play" width="255" height="100">
+        </a>
+        <a class="btn btn-ghost" href="#screens">See the screens</a>
+      </div>
+
+      <ul class="hero-chips">
+        <li><b>AI receipt scan</b> in seconds</li>
+        <li><b>km/L &amp; MPG</b> auto-calculated</li>
+        <li><b>CSV export</b> + Drive backup</li>
+        <li><b>6 colours, light &amp; dark</b> themes</li>
+      </ul>
+
+      <p class="hero-meta">Free manual logging &middot; Rated for 3+ &middot; AU, US &amp; UK receipts tested</p>
+    </div>
+
+    <div class="hero-phone reveal" aria-hidden="false">
+      <div class="phone-frame">
+        <div class="phone-notch"></div>
+        <img class="phone-screen" src="assets/shots/s1.webp" alt="FuelFlow dashboard showing total cost, total fuel, average price, number of fill-ups and a monthly spending bar chart" width="276" height="592">
+      </div>
+      <div class="float-card float-a">
+        <span class="dot dot-amber"></span>
+        <div><b>Receipt scanned</b><span>54.41 L @ $1.839 &middot; $100.06</span></div>
+      </div>
+      <div class="float-card float-b">
+        <span class="dot dot-green"></span>
+        <div><b>10.2 km/L</b><span>up 0.6 vs last fill-up</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TRUST STRIP ============ -->
+<section class="strip" aria-label="At a glance">
+  <div class="container strip-inner">
+    <p><b>0 ads</b> in the app</p>
+    <p><b>On-device</b> scanner option</p>
+    <p><b>Unlimited</b> free manual logs</p>
+    <p><b>Multi-vehicle</b> cars, trucks, bikes</p>
+    <p><b>Your data</b> local &amp; Drive backup</p>
+  </div>
+</section>
+
+<!-- ============ FEATURES ============ -->
+<section class="section" id="features">
+  <div class="container">
+    <header class="section-head reveal">
+      <p class="eyebrow">Features</p>
+      <h2>Everything a fill-up generates, logged and charted</h2>
+      <p class="section-sub">From the pump to your budget: capture, calculate and compare.</p>
+    </header>
+
+    <div class="grid grid-3">
+      <article class="card reveal">
+        <span class="ico ico-amber">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 2h12v20l-3-2.4-3 2.4-3-2.4L6 22V2Z"/><path d="M8.5 8h7M8.5 11.5h7M8.5 15h4.5"/></svg>
+        </span>
+        <h3>AI receipt scanner</h3>
+        <p>Photograph the station receipt and FuelFlow extracts fuel quantity, total cost, price per litre/gallon, discounts and the date in seconds. No typing, no typos.</p>
+        <p class="card-note">Tested with Australian, US &amp; UK printed receipts. 5 scans free to try.</p>
+      </article>
+
+      <article class="card reveal">
+        <span class="ico ico-green">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C7 8 4.5 11.5 4.5 15a7.5 7.5 0 0 0 15 0C19.5 11.5 17 8 12 2Z"/><path d="M9 15.5h6l-1.6-2.6"/></svg>
+        </span>
+        <h3>Offline, on-device scanning</h3>
+        <p>Prefer to keep everything local? Use the on-device scanner — it reads receipts on your phone with no internet connection at all.</p>
+        <p class="card-note">Works at remote pumps with no signal.</p>
+      </article>
+
+      <article class="card reveal">
+        <span class="ico ico-purple">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 20h18M5 20V9M10 20V4M15 20v-7M20 20v-4"/></svg>
+        </span>
+        <h3>Analytics &amp; trends</h3>
+        <p>Clean charts for monthly spend, cost breakdown, fuel price per unit over time and your economy trend — so you can see exactly what driving habits cost you.</p>
+        <p class="card-note">Compare efficiency month by month.</p>
+      </article>
+
+      <article class="card reveal">
+        <span class="ico ico-purple">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 17h18M5 17v-5l2-5h10l2 5v5"/><circle cx="8" cy="18.5" r="1.8"/><circle cx="16" cy="18.5" r="1.8"/></svg>
+        </span>
+        <h3>Every vehicle, separately</h3>
+        <p>Add cars, trucks, vans and motorcycles. Switch vehicles instantly, keep separate expense records for each, and see which one is bleeding money.</p>
+        <p class="card-note">Family car + work ute in one app.</p>
+      </article>
+
+      <article class="card reveal">
+        <span class="ico ico-amber">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12M6 9l6-6 6 6"/><path d="M4 15v4a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-4"/></svg>
+        </span>
+        <h3>Backup &amp; export</h3>
+        <p>Back up your logs locally on the device, or to your own Google Drive. Export CSV reports for your records, taxes or a fleet report.</p>
+        <p class="card-note">Restore on a new phone in minutes.</p>
+      </article>
+
+      <article class="card reveal">
+        <span class="ico ico-green">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 3 5v8c0 5 4 8.5 9 9.5 5-1 9-4.5 9-9.5V5L12 2Z"/><path d="M8.4 12.2 11 14.8l4.8-5.2"/></svg>
+        </span>
+        <h3>No ads, no tracking</h3>
+        <p>Your fuel history stays yours. No advertising, no selling your driving data. Manual logging and local backup are free, forever.</p>
+        <p class="card-note">Premium is one purchase, not a subscription wall.</p>
+      </article>
+    </div>
+
+    <div class="themes-band reveal">
+      <div class="themes-copy">
+        <h3>Six colours, in light or dark</h3>
+        <p>Pick a primary colour — Black, Purple, Green, Blue, Red or Yellow — then run it in light or dark mode. Every chart, card and screen follows your choice. The screenshots below show light, dark and blue.</p>
+      </div>
+      <div class="theme-swatches" aria-label="Primary colours: Black, Purple, Green, Blue, Red, Yellow">
+        <span class="sw sw-black">Black</span>
+        <span class="sw sw-purple">Purple</span>
+        <span class="sw sw-green">Green</span>
+        <span class="sw sw-blue">Blue</span>
+        <span class="sw sw-red">Red</span>
+        <span class="sw sw-yellow">Yellow</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ HOW IT WORKS ============ -->
+<section class="section section-alt" id="how">
+  <div class="container">
+    <header class="section-head reveal">
+      <p class="eyebrow">How it works</p>
+      <h2>Three steps per fill-up</h2>
+      <p class="section-sub">Logging takes less time than pumping the tank.</p>
+    </header>
+
+    <ol class="steps">
+      <li class="reveal">
+        <span class="step-num">1</span>
+        <h3>Snap the receipt</h3>
+        <p>Take a photo, or upload one from your gallery. Prefer typing? Log manually — that path is always free.</p>
+      </li>
+      <li class="reveal">
+        <span class="step-num">2</span>
+        <h3>Review what it read</h3>
+        <p>Each detected item appears as a card: fuel, coffee, loyalty discount. Tap the trash to drop anything that is not fuel.</p>
+      </li>
+      <li class="reveal">
+        <span class="step-num">3</span>
+        <h3>Confirm the odometer</h3>
+        <p>Add the current odometer reading and FuelFlow does the maths: distance, cost per km, km/L or MPG.</p>
+      </li>
+    </ol>
+
+    <div class="formula reveal" aria-label="What FuelFlow calculates">
+      <span class="formula-label">Auto-calculated</span>
+      <code>distance = odometer − last odometer</code>
+      <code>cost / km = total ÷ distance</code>
+      <code>km / L = distance ÷ litres</code>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SCREENSHOTS ============ -->
+<section class="section" id="screens">
+  <div class="container">
+    <header class="section-head reveal">
+      <p class="eyebrow">Screenshots</p>
+      <h2>Tap any screen to see it full size</h2>
+      <p class="section-sub">Real app screens, from dashboard to receipt scan. Swipe, use the arrows, or tap a phone.</p>
+    </header>
+
+    <div class="carousel reveal" id="carousel" aria-label="App screenshots carousel" tabindex="0">
+      <div class="car-row">
+      <button class="car-btn prev" id="carPrev" aria-label="Previous screenshot">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5 8 12l7 7"/></svg>
+      </button>
+
+      <div class="car-track" id="carTrack">
+        <div class="slide" role="button" tabindex="0" aria-label="Enlarge: Fuel summary dashboard, light theme with purple accent">
+          <div class="phone-frame sm"><img src="assets/shots/s1.webp" alt="FuelFlow dashboard in light theme with purple accent: total cost, total fuel, average price, fill-ups and monthly expenditure chart" loading="lazy" width="276" height="592"></div>
+          <p class="cap"><span class="tag t-light">Light &middot; Purple</span>Fuel summary &amp; monthly trends</p>
+        </div>
+        <div class="slide" role="button" tabindex="0" aria-label="Enlarge: Fuel summary dashboard, dark theme">
+          <div class="phone-frame sm"><img src="assets/shots/s2.webp" alt="FuelFlow dashboard in dark theme with the same summary cards and spending chart" loading="lazy" width="276" height="592"></div>
+          <p class="cap"><span class="tag t-dark">Dark theme</span>Same dashboard, dark mode</p>
+        </div>
+        <div class="slide" role="button" tabindex="0" aria-label="Enlarge: Fuel summary dashboard, blue accent in light mode">
+          <div class="phone-frame sm"><img src="assets/shots/s3.webp" alt="FuelFlow dashboard in light mode with blue accent, summary cards and spending chart" loading="lazy" width="276" height="592"></div>
+          <p class="cap"><span class="tag t-blue">Light &middot; Blue</span>Blue accent theme</p>
+        </div>
+        <div class="slide" role="button" tabindex="0" aria-label="Enlarge: Fuel price and economy trend charts">
+          <div class="phone-frame sm"><img src="assets/shots/s4.webp" alt="FuelFlow charts of price per unit evolution and calculated economy in km per litre" loading="lazy" width="276" height="592"></div>
+          <p class="cap">Price per unit &amp; economy trend</p>
+        </div>
+        <div class="slide" role="button" tabindex="0" aria-label="Enlarge: Scan and log screen">
+          <div class="phone-frame sm"><img src="assets/shots/s5.webp" alt="FuelFlow Scan & Log screen with take photo, upload photo and log manually options" loading="lazy" width="276" height="592"></div>
+          <p class="cap">Scan &amp; log — photo, upload or manual</p>
+        </div>
+        <div class="slide" role="button" tabindex="0" aria-label="Enlarge: AI receipt summary">
+          <div class="phone-frame sm"><img src="assets/shots/s6.webp" alt="Receipt summary cards read by the AI scanner: fuel item, coffee item, rewards discount and total charged" loading="lazy" width="276" height="592"></div>
+          <p class="cap">Receipt items read by the scanner</p>
+        </div>
+        <div class="slide" role="button" tabindex="0" aria-label="Enlarge: Expense details form">
+          <div class="phone-frame sm"><img src="assets/shots/s7.webp" alt="FuelFlow details form with fuel type chips, station, paid date, paid time and odometer reading" loading="lazy" width="276" height="592"></div>
+          <p class="cap">Fuel type, station, date &amp; odometer</p>
+        </div>
+        <div class="slide" role="button" tabindex="0" aria-label="Enlarge: Expense history and log detail">
+          <div class="phone-frame sm"><img src="assets/shots/s8.webp" alt="FuelFlow expense history table with a detail card showing date, station, amount, litres, price per litre, fuel type and tag" loading="lazy" width="276" height="592"></div>
+          <p class="cap">History table &amp; full log detail</p>
+        </div>
+      </div>
+
+      <button class="car-btn next" id="carNext" aria-label="Next screenshot">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg>
+      </button>
+      </div>
+
+      <div class="dots" id="carDots" role="tablist" aria-label="Choose screenshot"></div>
+    </div>
+    <p class="car-hint">Swipe / drag &middot; arrow keys &middot; click a phone to zoom</p>
+  </div>
+</section>
+
+<!-- ============ PRICING ============ -->
+<section class="section section-alt" id="pricing">
+  <div class="container">
+    <header class="section-head reveal">
+      <p class="eyebrow">Pricing</p>
+      <h2>Free to track. Premium to automate.</h2>
+      <p class="section-sub">Manual logging is free with no ads. Premium adds the scanner, exports and cloud backup.</p>
+    </header>
+
+    <div class="grid grid-2 pricing">
+      <article class="plan reveal">
+        <h3>Free</h3>
+        <p class="plan-price"><b>Free</b> forever</p>
+        <ul>
+          <li>Unlimited manual fuel logs</li>
+          <li>All summary stats &amp; charts</li>
+          <li>Multi-vehicle support</li>
+          <li>Local backup &amp; restore</li>
+          <li>No ads, ever</li>
+        </ul>
+        <a class="btn btn-ghost full" href="https://play.google.com/store/apps/details?id=com.nksoft.fuelflow" rel="noopener">Install free</a>
+      </article>
+
+      <article class="plan plan-featured reveal">
+        <span class="ribbon">5 scans free to try</span>
+        <h3>Premium</h3>
+        <p class="plan-price"><b>In-app purchase</b></p>
+        <ul>
+          <li>AI receipt scanner (online)</li>
+          <li>On-device local scanner</li>
+          <li>CSV report export</li>
+          <li>Google Drive backup</li>
+          <li>Still no ads, ever</li>
+        </ul>
+        <a class="play-badge full" href="https://play.google.com/store/apps/details?id=com.nksoft.fuelflow" rel="noopener">
+          <img src="assets/badge/en_badge_web_generic.png" alt="Get it on Google Play" width="255" height="100">
+        </a>
+      </article>
+    </div>
+    <p class="fine">Pricing and availability are set in Google Play. FuelFlow is free to install with in-app purchases.</p>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="section" id="faq">
+  <div class="container narrow">
+    <header class="section-head reveal">
+      <p class="eyebrow">FAQ</p>
+      <h2>Common questions</h2>
+    </header>
+
+    <div class="faqs reveal">
+      <details>
+        <summary>Will the receipt scanner work with my receipts?</summary>
+        <p>It is tested against Australian, US and UK printed fuel receipts. It should work with any printed receipt as long as the photo is clear and the details are printed on it. If a scan misses something, you can correct it before saving.</p>
+      </details>
+      <details>
+        <summary>Do I need an internet connection to log fuel?</summary>
+        <p>No. Manual logging is always available, and the on-device scanner runs entirely on your phone. The online AI scanner is the option that needs a connection.</p>
+      </details>
+      <details>
+        <summary>Where does my data go?</summary>
+        <p>Your logs live on your phone. Local backup writes to your device; Google Drive backup writes to your own Drive account. There are no ads and no sale of your driving data.</p>
+      </details>
+      <details>
+        <summary>Is km/L and MPG both supported?</summary>
+        <p>Yes. FuelFlow calculates distance from consecutive odometer readings and reports economy in km/L or MPG, plus cost per km, in the units you use.</p>
+      </details>
+      <details>
+        <summary>Can I manage more than one vehicle?</summary>
+        <p>Yes. Add cars, trucks and motorcycles, switch between them, and keep separate expense records for each. Summary stats are per vehicle.</p>
+      </details>
+      <details>
+        <summary>Can I get my data out of the app?</summary>
+        <p>Yes — export CSV reports of your fuel expenses (premium), and back up locally or to Google Drive so you can restore on a new device.</p>
+      </details>
+      <details>
+        <summary>What exactly is free, and what is premium?</summary>
+        <p>Manual logging, stats, charts, multi-vehicle use and local backup are free. Receipt scanning, CSV export and Google Drive backup are premium. You can scan 5 receipts free to see how the scanner works.</p>
+      </details>
+    </div>
+
+    <div class="cta-band reveal">
+      <div class="cta-copy">
+        <h2>Start your fuel log today</h2>
+        <p>Install FuelFlow, log one fill-up, and see what your car really costs per kilometre.</p>
+      </div>
+      <div class="cta-actions">
+        <a class="play-badge badge-light" href="https://play.google.com/store/apps/details?id=com.nksoft.fuelflow" rel="noopener">
+          <img src="assets/badge/en_badge_web_generic.png" alt="Get it on Google Play" width="255" height="100">
+        </a>
+        <a class="btn btn-ghost" href="#screens">Look at the screens</a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="foot-brand">
+      <img src="assets/icon.webp" alt="" width="44" height="44">
+      <div>
+        <p class="foot-title">FuelFlow: Fuel Receipt Log</p>
+        <p class="foot-sub">Track fuel expenses, mileage &amp; KmL/MPG, scan receipts, and monitor vehicle costs.</p>
+      </div>
+    </div>
+    <div class="foot-links">
+      <a href="https://play.google.com/store/apps/details?id=com.nksoft.fuelflow" rel="noopener">Google Play</a>
+      <a href="../">← All apps by nksoft26</a>
+      <a href="#features">Features</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#faq">FAQ</a>
+    </div>
+    <p class="foot-legal">Developed by nksoft26 &middot; Android, rated for 3+ &middot; © <span id="year">2026</span> FuelFlow &middot; The official FuelFlow website.</p>
+  </div>
+</footer>
+
+<!-- ============ LIGHTBOX ============ -->
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Screenshot viewer" hidden>
+  <button class="lb-close" id="lbClose" aria-label="Close">✕</button>
+  <button class="lb-nav lb-prev" id="lbPrev" aria-label="Previous screenshot"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5 8 12l7 7"/></svg></button>
+  <figure>
+    <img id="lbImg" alt="">
+    <figcaption id="lbCap"></figcaption>
+  </figure>
+  <button class="lb-nav lb-next" id="lbNext" aria-label="Next screenshot"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></button>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>

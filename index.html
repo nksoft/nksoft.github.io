@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>nksoft26 — Android apps: FuelFlow, IPTV &amp; WhenDidI?</title>
+<meta name="description" content="The home of nksoft26 Android apps: FuelFlow fuel receipt log, IPTV player and WhenDidI? event tracker.">
+
+<!-- Replace YOURNAME with your GitHub username before publishing (see README.md) -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="nksoft26 — Android apps">
+<meta property="og:description" content="FuelFlow, IPTV and WhenDidI? — Android apps by nksoft26.">
+<meta property="og:url" content="https://YOURNAME.github.io/app-showcase/">
+<meta property="og:image" content="https://YOURNAME.github.io/app-showcase/FuelFlow/assets/shots/s9.webp">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#FAF7F2">
+<link rel="icon" href="assets/hub-icon.svg" type="image/svg+xml">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<noscript><style>.reveal { opacity: 1; transform: none }</style></noscript>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<!-- ============ HEADER ============ -->
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="#top" aria-label="nksoft26 home">
+      <span class="brand-mark" aria-hidden="true">n</span>
+      <span>
+        <span class="brand-name">nksoft26</span><br>
+        <span class="brand-sub">android apps</span>
+      </span>
+    </a>
+    <nav class="nav" aria-label="Site sections">
+      <a href="#apps">The apps</a>
+      <a href="#about">About</a>
+    </nav>
+    <a class="nav-cta" href="https://play.google.com/store/apps/developer?id=nksoft26"
+       target="_blank" rel="noopener">More on Google Play&nbsp;&#8599;</a>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="top">
+  <div class="container">
+    <p class="eyebrow">apps by nksoft26</p>
+    <h1>Small, fast, private Android&nbsp;apps.</h1>
+    <p class="hero-lede">
+      A growing collection of Android apps — fuel logs, live TV and everyday reminders.
+      Pick an app below to see screenshots, feature details and its
+      Google Play page.
+    </p>
+    <div class="hero-cta">
+      <a class="btn btn-primary" href="#apps">Browse the apps &#8595;</a>
+      <a class="btn btn-outline" href="https://play.google.com/store/apps/developer?id=nksoft26"
+         target="_blank" rel="noopener">Developer page on Google Play&nbsp;&#8599;</a>
+    </div>
+    <!-- hero phones are rendered from the app registry in js/main.js -->
+    <div class="hero-phones" id="heroPhones" aria-hidden="true"></div>
+    <noscript>
+      <ul class="grid" style="margin-top:28px; text-align:left">
+        <li><a href="FuelFlow/index.html">FuelFlow — Fuel receipt log</a></li>
+        <li><a href="IPTV/index.html">IPTV — Modern IPTV player</a></li>
+        <li><a href="WhenDidI/index.html">WhenDidI? — Event tracker</a></li>
+      </ul>
+    </noscript>
+  </div>
+</section>
+
+<!-- ============ APPS ============ -->
+<section class="apps" id="apps">
+  <div class="container">
+    <div class="apps-head">
+      <h2>The apps</h2>
+      <p>Every card goes deeper with screenshots and feature details, plus a direct
+         link to each app&rsquo;s Google Play listing.</p>
+    </div>
+    <!-- cards are rendered from the app registry in js/main.js -->
+    <div class="grid" id="appGrid"></div>
+  </div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section class="about" id="about">
+  <div class="container">
+    <div class="about-card reveal">
+      <h2>Why these apps?</h2>
+      <p>Every app is built by one developer, nksoft26, with the same rules: useful
+         features first, your data stays on your phone, and a clean interface that gets
+         out of the way. Each app is free to use, with in-app purchases for extra
+         features.</p>
+      <div>
+        <a class="btn btn-outline" href="https://play.google.com/store/apps/developer?id=nksoft26"
+           target="_blank" rel="noopener">Browse all nksoft26 apps on Google Play&nbsp;&#8599;</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div>
+      <div class="footer-brand">
+        <span class="brand-mark" aria-hidden="true">n</span>
+        <span>nksoft26</span>
+      </div>
+      <p>Android apps, gathered here in one showcase site.</p>
+    </div>
+    <nav aria-label="Footer app links">
+      <ul class="footer-apps" id="footerApps"></ul>
+    </nav>
+    <p class="footer-note">
+      &#169; <span id="year"></span> nksoft26 · App screenshots are from each app&rsquo;s
+      Google Play listing. This site is not affiliated with Google Play.
+    </p>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
