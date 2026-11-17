@@ -18,7 +18,7 @@ const APPS = [
     icon: "FuelFlow/assets/icon.webp",
     shot: "FuelFlow/assets/shots/s1.webp",
     shotAlt: "FuelFlow main screen: fuel log",
-    site: "FuelFlow/index.html",
+    site: "FuelFlow",
     play: "https://play.google.com/store/apps/details?id=com.nksoft.fuelflow",
     accent: "#F1912B",
     status: "live"
@@ -33,7 +33,7 @@ const APPS = [
     icon: "IPTV/assets/img/app-icon-192.webp",
     shot: "IPTV/assets/img/thumbs/shot06.webp",
     shotAlt: "IPTV main screen: live channel player with program guide",
-    site: "IPTV/index.html",
+    site: "IPTV",
     play: "https://play.google.com/store/apps/details?id=com.nksoft.iptv",
     accent: "#2E7DE4",
     status: "live"
@@ -48,7 +48,7 @@ const APPS = [
     icon: "WhenDidI/assets/icon.webp",
     shot: "WhenDidI/assets/screenshots/shot1.webp",
     shotAlt: "WhenDidI? main screen: tracker list",
-    site: "WhenDidI/index.html",
+    site: "WhenDidI",
     play: "https://play.google.com/store/apps/details?id=com.nksoft.whendidi",
     accent: "#C29B64",
     status: "live"
